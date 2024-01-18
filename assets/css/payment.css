@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+}
+
+header{
+    height: 10vh; 
+    position:static;  
+}
+
+.d-flex img{
+    width: 50px;
+    height:50px;
+    margin-top: -10px;
+}
+
+.nav{
+    position:relative;
+    overflow:hidden;
+}
+
+.nav .active .nav-link{
+    color: white;
+    background-color: #29422d;
+    border-radius: 0px;
+}
+
+.nav-item a{
+    font-size: 16px;
+    color: #72683f;
+}
+
+.nav-item a:hover{
+    color: #29422d;
+}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #29422d;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
+
+.billing{
+    padding: 20px;
+    margin: 20px;
+}
+
+footer{
+    height:15vh;
+    background-color:rgb(236, 242, 233);
+}
+
+footer .logo{
+    height: 40px;
+    width: 40px;
+}
